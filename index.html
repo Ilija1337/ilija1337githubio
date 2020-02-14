@@ -42,15 +42,15 @@
 
 
                     <div class="row text-white text-center m-0">
-                        <div class="col port-item p-3 p-sm-3 p-md-4 p-lg-5 bgdark border border-dark clickMe1">
+                        <div class="col port-item p-3 p-sm-3 p-md-4 p-lg-5 bgdark clickMe1 bgactive">
                             <i class="fas fa-home fa-2x d-block"></i>
                             <span class="d-none d-sm-block fontKartice lead">O meni</span>
                         </div>
-                        <div class="col port-item p-3 p-sm-3 p-md-4 p-lg-5 bgdark border border-dark clickMe2">
+                        <div class="col port-item p-3 p-sm-3 p-md-4 p-lg-5 bgdark clickMe2">
                             <i class="fas fa-images fa-2x d-block"></i>
                             <span class="d-none d-sm-block fontKartice lead">Galerija</span>
                         </div>
-                        <div class="col port-item p-3 p-sm-3 p-md-4 p-lg-5 bgdark border border-dark clickMe3">
+                        <div class="col port-item p-3 p-sm-3 p-md-4 p-lg-5 bgdark clickMe3">
                             <i class="fas fa-envelope fa-2x d-block"></i>
                             <span class="d-none d-sm-block fontKartice lead">Kontakt</span>
                         </div>
@@ -932,22 +932,34 @@
             $(".collapse2").hide();
             $(".collapse3").hide();
             $(".clickMe1").click(function () {
+                $(".bgactive").removeClass("bgactive");
+                $(".clickMe1").addClass("bgactive")
                 $(".collapse1").slideDown(1000);
                 $(".collapse2").slideUp(1000);
                 $(".collapse3").slideUp(1000);
             });
             $(".clickMe2").click(function () {
+                $(".bgactive").removeClass("bgactive");
+                $(".clickMe2").addClass("bgactive")
                 $(".collapse1").slideUp(1000);
                 $(".collapse2").slideDown(1000);
                 $(".collapse3").slideUp(1000);
             });
             $(".clickMe3").click(function () {
+                $(".bgactive").removeClass("bgactive");
+                $(".clickMe3").addClass("bgactive")
                 $(".collapse1").slideUp(1000);
                 $(".collapse2").slideUp(1000);
                 $(".collapse3").slideDown(1000);
             });
         });
     </script>
+
+    <script>
+
+    </script>
+
+
     <script>
         //Get the button:
         mybutton = document.getElementById("myBtn");
