@@ -25,6 +25,10 @@
 
 /* #343a40 - bg-dark */
 
+.bgactive{
+  border-bottom: 5px solid white;
+}
+
 .bgdark{
   background-image: linear-gradient(#343a40, rgb(75, 75, 75));
 }
@@ -123,5 +127,6 @@
   height: 450px;
   object-fit: cover;
 }
+
 
 
